@@ -1,0 +1,5 @@
+<map id="update_entity" name="update_entity">
+<area shape="rect" id="node2" href="$entity_8c.html#a7a0c32e4b866aa8b654cf37de8a5090b" title="for the animation the secondary entity . " alt="" coords="169,5,220,32"/>
+<area shape="rect" id="node3" href="$entity_8c.html#a6a59c380525a58504970c106321599d2" title="for the random movement of the secondary entity and the automation ennemi . " alt="" coords="153,56,236,83"/>
+<area shape="rect" id="node4" href="$entity_8c.html#af78186ba488162ac2cf554d640b429b2" title="to change the maxi down and the maxi up randomly . " alt="" coords="284,56,391,83"/>
+</map>

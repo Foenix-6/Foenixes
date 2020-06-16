@@ -1,0 +1,6 @@
+<map id="mise_a_jour_map" name="mise_a_jour_map">
+<area shape="rect" id="node2" href="$map_8c.html#a61b189aa3bdc57b4b0d1d655060f0865" title="To initialize the postion of the mini_perso m . " alt="" coords="181,5,267,32"/>
+<area shape="rect" id="node3" href="$map_8c.html#a0cc077dcdafe9f29809d29e5733876c2" title="To initialize the postion of the mini_entity m . " alt="" coords="181,56,267,83"/>
+<area shape="rect" id="node4" href="$map_8c.html#a6f3e3fccffbe926c3c77eb06067745b1" title="To show the map m and the mini_entity m and the mini_perso p . " alt="" coords="177,107,271,133"/>
+<area shape="rect" id="node5" href="$structmap.html#a32daf60eeab6910e405dc049350b1e9c" title="map::map" alt="" coords="319,107,399,133"/>
+</map>

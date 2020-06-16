@@ -1,0 +1,4 @@
+<map id="rand_min_max" name="rand_min_max">
+<area shape="rect" id="node2" href="$entity_8c.html#a6a59c380525a58504970c106321599d2" title="for the random movement of the secondary entity and the automation ennemi . " alt="" coords="160,5,243,32"/>
+<area shape="rect" id="node3" href="$entity_8c.html#a669bdf00d6412194de61ae2bde2aa833" title="for the integration of two functions (anim,mouv) . " alt="" coords="291,5,391,32"/>
+</map>

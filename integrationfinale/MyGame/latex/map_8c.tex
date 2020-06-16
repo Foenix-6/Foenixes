@@ -1,0 +1,217 @@
+\hypertarget{map_8c}{}\section{map.\+c File Reference}
+\label{map_8c}\index{map.\+c@{map.\+c}}
+{\ttfamily \#include \char`\"{}map.\+h\char`\"{}}\\*
+Include dependency graph for map.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{map_8c_a72e7f3a5e2bcc4c7dc646cc1c04d3671}{initialiser\+\_\+map} (\hyperlink{structmap}{map} $\ast$m, S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structentity}{entity} $\ast$e, \hyperlink{structpersonnage}{personnage} $\ast$p)
+\begin{DoxyCompactList}\small\item\em To initialize the map m and the mini entity . \end{DoxyCompactList}\item 
+void \hyperlink{map_8c_a0cc077dcdafe9f29809d29e5733876c2}{entity\+\_\+map} (\hyperlink{structmap}{map} $\ast$m, \hyperlink{structentity}{entity} $\ast$e)
+\begin{DoxyCompactList}\small\item\em To initialize the postion of the mini\+\_\+entity m . \end{DoxyCompactList}\item 
+void \hyperlink{map_8c_a61b189aa3bdc57b4b0d1d655060f0865}{perso\+\_\+map} (\hyperlink{structmap}{map} $\ast$m, \hyperlink{structpersonnage}{personnage} $\ast$p)
+\begin{DoxyCompactList}\small\item\em To initialize the postion of the mini\+\_\+perso m . \end{DoxyCompactList}\item 
+void \hyperlink{map_8c_a6f3e3fccffbe926c3c77eb06067745b1}{affiche\+\_\+map} (\hyperlink{structmap}{map} $\ast$m, S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structentity}{entity} $\ast$e, \hyperlink{structpersonnage}{personnage} $\ast$p)
+\begin{DoxyCompactList}\small\item\em To show the map m and the mini\+\_\+entity m and the mini\+\_\+perso p . \end{DoxyCompactList}\item 
+void \hyperlink{map_8c_ae22c9d4419fe0a3287b44813affdeea0}{mise\+\_\+a\+\_\+jour\+\_\+map} (\hyperlink{structmap}{map} $\ast$m, S\+D\+L\+\_\+\+Surface $\ast$screen, \hyperlink{structpersonnage}{personnage} $\ast$p, \hyperlink{structentity}{entity} $\ast$e)
+\begin{DoxyCompactList}\small\item\em for the integration of two functions (entity\+\_\+map,affiche\+\_\+map,perso\+\_\+map) . \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{map.\+c@{map.\+c}!affiche\+\_\+map@{affiche\+\_\+map}}
+\index{affiche\+\_\+map@{affiche\+\_\+map}!map.\+c@{map.\+c}}
+\subsubsection[{\texorpdfstring{affiche\+\_\+map(map $\ast$m, S\+D\+L\+\_\+\+Surface $\ast$screen, entity $\ast$e, personnage $\ast$p)}{affiche_map(map *m, SDL_Surface *screen, entity *e, personnage *p)}}]{\setlength{\rightskip}{0pt plus 5cm}void affiche\+\_\+map (
+\begin{DoxyParamCaption}
+\item[{{\bf map} $\ast$}]{m, }
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen, }
+\item[{{\bf entity} $\ast$}]{e, }
+\item[{{\bf personnage} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{map_8c_a6f3e3fccffbe926c3c77eb06067745b1}{}\label{map_8c_a6f3e3fccffbe926c3c77eb06067745b1}
+
+
+To show the map m and the mini\+\_\+entity m and the mini\+\_\+perso p . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & the screen \\
+\hline
+{\em m} & the map \\
+\hline
+{\em e} & the entity \\
+\hline
+{\em p} & the perso \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{map_8c_a6f3e3fccffbe926c3c77eb06067745b1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{map_8c_a6f3e3fccffbe926c3c77eb06067745b1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{map.\+c@{map.\+c}!entity\+\_\+map@{entity\+\_\+map}}
+\index{entity\+\_\+map@{entity\+\_\+map}!map.\+c@{map.\+c}}
+\subsubsection[{\texorpdfstring{entity\+\_\+map(map $\ast$m, entity $\ast$e)}{entity_map(map *m, entity *e)}}]{\setlength{\rightskip}{0pt plus 5cm}void entity\+\_\+map (
+\begin{DoxyParamCaption}
+\item[{{\bf map} $\ast$}]{m, }
+\item[{{\bf entity} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{map_8c_a0cc077dcdafe9f29809d29e5733876c2}{}\label{map_8c_a0cc077dcdafe9f29809d29e5733876c2}
+
+
+To initialize the postion of the mini\+\_\+entity m . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & the map \\
+\hline
+{\em e} & the entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{map_8c_a0cc077dcdafe9f29809d29e5733876c2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{map.\+c@{map.\+c}!initialiser\+\_\+map@{initialiser\+\_\+map}}
+\index{initialiser\+\_\+map@{initialiser\+\_\+map}!map.\+c@{map.\+c}}
+\subsubsection[{\texorpdfstring{initialiser\+\_\+map(map $\ast$m, S\+D\+L\+\_\+\+Surface $\ast$screen, entity $\ast$e, personnage $\ast$p)}{initialiser_map(map *m, SDL_Surface *screen, entity *e, personnage *p)}}]{\setlength{\rightskip}{0pt plus 5cm}void initialiser\+\_\+map (
+\begin{DoxyParamCaption}
+\item[{{\bf map} $\ast$}]{m, }
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen, }
+\item[{{\bf entity} $\ast$}]{e, }
+\item[{{\bf personnage} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{map_8c_a72e7f3a5e2bcc4c7dc646cc1c04d3671}{}\label{map_8c_a72e7f3a5e2bcc4c7dc646cc1c04d3671}
+
+
+To initialize the map m and the mini entity . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & map \\
+\hline
+{\em screen} & the screen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{map_8c_a72e7f3a5e2bcc4c7dc646cc1c04d3671_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{map.\+c@{map.\+c}!mise\+\_\+a\+\_\+jour\+\_\+map@{mise\+\_\+a\+\_\+jour\+\_\+map}}
+\index{mise\+\_\+a\+\_\+jour\+\_\+map@{mise\+\_\+a\+\_\+jour\+\_\+map}!map.\+c@{map.\+c}}
+\subsubsection[{\texorpdfstring{mise\+\_\+a\+\_\+jour\+\_\+map(map $\ast$m, S\+D\+L\+\_\+\+Surface $\ast$screen, personnage $\ast$p, entity $\ast$e)}{mise_a_jour_map(map *m, SDL_Surface *screen, personnage *p, entity *e)}}]{\setlength{\rightskip}{0pt plus 5cm}void mise\+\_\+a\+\_\+jour\+\_\+map (
+\begin{DoxyParamCaption}
+\item[{{\bf map} $\ast$}]{m, }
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen, }
+\item[{{\bf personnage} $\ast$}]{p, }
+\item[{{\bf entity} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{map_8c_ae22c9d4419fe0a3287b44813affdeea0}{}\label{map_8c_ae22c9d4419fe0a3287b44813affdeea0}
+
+
+for the integration of two functions (entity\+\_\+map,affiche\+\_\+map,perso\+\_\+map) . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & the map \\
+\hline
+{\em e} & the entity \\
+\hline
+{\em p} & the personnage \\
+\hline
+{\em screen} & the screen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{map_8c_ae22c9d4419fe0a3287b44813affdeea0_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{map.\+c@{map.\+c}!perso\+\_\+map@{perso\+\_\+map}}
+\index{perso\+\_\+map@{perso\+\_\+map}!map.\+c@{map.\+c}}
+\subsubsection[{\texorpdfstring{perso\+\_\+map(map $\ast$m, personnage $\ast$p)}{perso_map(map *m, personnage *p)}}]{\setlength{\rightskip}{0pt plus 5cm}void perso\+\_\+map (
+\begin{DoxyParamCaption}
+\item[{{\bf map} $\ast$}]{m, }
+\item[{{\bf personnage} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{map_8c_a61b189aa3bdc57b4b0d1d655060f0865}{}\label{map_8c_a61b189aa3bdc57b4b0d1d655060f0865}
+
+
+To initialize the postion of the mini\+\_\+perso m . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & the map \\
+\hline
+{\em p} & the perso \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{map_8c_a61b189aa3bdc57b4b0d1d655060f0865_icgraph}
+\end{center}
+\end{figure}
+
+

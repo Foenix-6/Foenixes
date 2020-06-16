@@ -1,0 +1,355 @@
+\hypertarget{entity_8c}{}\section{entity.\+c File Reference}
+\label{entity_8c}\index{entity.\+c@{entity.\+c}}
+{\ttfamily \#include \char`\"{}entity.\+h\char`\"{}}\\*
+Include dependency graph for entity.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{entity_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void {\bfseries init\+\_\+tab\+\_\+anim\+\_\+entity} (S\+D\+L\+\_\+\+Rect $\ast$clip, \hyperlink{structentity}{entity} $\ast$e)\hypertarget{entity_8c_ad3e342e83d35251b90b1c9e4225e2ff2}{}\label{entity_8c_ad3e342e83d35251b90b1c9e4225e2ff2}
+
+\item 
+void \hyperlink{entity_8c_a4ccd350b3198bed521c69a2498ecbc67}{initialiser\+\_\+entity} (\hyperlink{structentity}{entity} $\ast$e, int t)
+\begin{DoxyCompactList}\small\item\em To initialize the entity e . \end{DoxyCompactList}\item 
+void \hyperlink{entity_8c_af0abb6172652186e8763e3ceaae90729}{afficher\+\_\+entity} (\hyperlink{structentity}{entity} $\ast$e, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em To show the entity e . \end{DoxyCompactList}\item 
+void \hyperlink{entity_8c_a6a59c380525a58504970c106321599d2}{mvt\+\_\+entity} (\hyperlink{structentity}{entity} $\ast$e, \hyperlink{structpersonnage}{personnage} $\ast$p)
+\begin{DoxyCompactList}\small\item\em for the random movement of the secondary entity and the automation ennemi . \end{DoxyCompactList}\item 
+void \hyperlink{entity_8c_a7a0c32e4b866aa8b654cf37de8a5090b}{anim} (\hyperlink{structentity}{entity} $\ast$e)
+\begin{DoxyCompactList}\small\item\em for the animation the secondary entity . \end{DoxyCompactList}\item 
+void \hyperlink{entity_8c_a669bdf00d6412194de61ae2bde2aa833}{update\+\_\+entity} (\hyperlink{structentity}{entity} $\ast$e, \hyperlink{structpersonnage}{personnage} $\ast$p)
+\begin{DoxyCompactList}\small\item\em for the integration of two functions (anim,mouv) . \end{DoxyCompactList}\item 
+void \hyperlink{entity_8c_af78186ba488162ac2cf554d640b429b2}{rand\+\_\+min\+\_\+max} (\hyperlink{structentity}{entity} $\ast$e)
+\begin{DoxyCompactList}\small\item\em to change the maxi down and the maxi up randomly . \end{DoxyCompactList}\item 
+\hyperlink{structinput}{input} {\bfseries getinput} (int $\ast$done, \hyperlink{structinput}{input} in)\hypertarget{entity_8c_a7214aad146b64791f5b5861d448ef61a}{}\label{entity_8c_a7214aad146b64791f5b5861d448ef61a}
+
+\item 
+void \hyperlink{entity_8c_ab76e735545868fc99b5b91849eea7d7a}{initialiser\+\_\+perso} (\hyperlink{structpersonnage}{personnage} $\ast$p)
+\begin{DoxyCompactList}\small\item\em To initialize the personnage p . \end{DoxyCompactList}\item 
+void \hyperlink{entity_8c_a43181619fa488bdbf458203b3a0a51c5}{afficher\+\_\+perso} (\hyperlink{structpersonnage}{personnage} $\ast$p, S\+D\+L\+\_\+\+Surface $\ast$screen)
+\begin{DoxyCompactList}\small\item\em To show the personnage p . \end{DoxyCompactList}\item 
+int \hyperlink{entity_8c_a49f4932b04d7655277cd407f47b7e8a1}{detect\+\_\+collision} (\hyperlink{structpersonnage}{personnage} $\ast$p, \hyperlink{structentity}{entity} $\ast$e)
+\begin{DoxyCompactList}\small\item\em for the detection of a collision bounding box . \end{DoxyCompactList}\item 
+int \hyperlink{entity_8c_af8b5bea828d1c0c6abffbccc337ca825}{gestion} (\hyperlink{structentity}{entity} $\ast$e)
+\begin{DoxyCompactList}\small\item\em if the type of the entity is good so it will disappear in case of collision . \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int {\bfseries nb\+\_\+frame} =12\hypertarget{entity_8c_a101ab30085902e1146574a0b932fee88}{}\label{entity_8c_a101ab30085902e1146574a0b932fee88}
+
+\item 
+int {\bfseries entity\+\_\+h} =195\hypertarget{entity_8c_a8b4053c4e63d58f4018864ac683c1d5e}{}\label{entity_8c_a8b4053c4e63d58f4018864ac683c1d5e}
+
+\item 
+int {\bfseries entity\+\_\+w} =135\hypertarget{entity_8c_aff5be824c6d2567eaa775c234b0fe452}{}\label{entity_8c_aff5be824c6d2567eaa775c234b0fe452}
+
+\item 
+int {\bfseries entity\+\_\+y} =0\hypertarget{entity_8c_ac36f9a0f58bf874396ec691c59cb7eb8}{}\label{entity_8c_ac36f9a0f58bf874396ec691c59cb7eb8}
+
+\item 
+int {\bfseries entity\+\_\+x} =0\hypertarget{entity_8c_ac2ed4cd2f396112c19501c74cd093dce}{}\label{entity_8c_ac2ed4cd2f396112c19501c74cd093dce}
+
+\item 
+int {\bfseries ennemie\+\_\+h} =135\hypertarget{entity_8c_abe44642926a3738d3607f3c8ce890b34}{}\label{entity_8c_abe44642926a3738d3607f3c8ce890b34}
+
+\item 
+int {\bfseries ennemie\+\_\+w} =129\hypertarget{entity_8c_aea098e70a00577ede95d26d16a1b6d72}{}\label{entity_8c_aea098e70a00577ede95d26d16a1b6d72}
+
+\item 
+int {\bfseries ennemie\+\_\+y} =1\hypertarget{entity_8c_a6048bde8994dfe0d1aa7e8c053c2fc07}{}\label{entity_8c_a6048bde8994dfe0d1aa7e8c053c2fc07}
+
+\item 
+int {\bfseries ennemie\+\_\+x} =6\hypertarget{entity_8c_a7aa4a05ced7a06cbc7767ce470684491}{}\label{entity_8c_a7aa4a05ced7a06cbc7767ce470684491}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{entity.\+c@{entity.\+c}!afficher\+\_\+entity@{afficher\+\_\+entity}}
+\index{afficher\+\_\+entity@{afficher\+\_\+entity}!entity.\+c@{entity.\+c}}
+\subsubsection[{\texorpdfstring{afficher\+\_\+entity(entity $\ast$e, S\+D\+L\+\_\+\+Surface $\ast$screen)}{afficher_entity(entity *e, SDL_Surface *screen)}}]{\setlength{\rightskip}{0pt plus 5cm}void afficher\+\_\+entity (
+\begin{DoxyParamCaption}
+\item[{{\bf entity} $\ast$}]{e, }
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen}
+\end{DoxyParamCaption}
+)}\hypertarget{entity_8c_af0abb6172652186e8763e3ceaae90729}{}\label{entity_8c_af0abb6172652186e8763e3ceaae90729}
+
+
+To show the entity e . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & the screen \\
+\hline
+{\em e} & the entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=265pt]{entity_8c_af0abb6172652186e8763e3ceaae90729_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{entity.\+c@{entity.\+c}!afficher\+\_\+perso@{afficher\+\_\+perso}}
+\index{afficher\+\_\+perso@{afficher\+\_\+perso}!entity.\+c@{entity.\+c}}
+\subsubsection[{\texorpdfstring{afficher\+\_\+perso(personnage $\ast$p, S\+D\+L\+\_\+\+Surface $\ast$screen)}{afficher_perso(personnage *p, SDL_Surface *screen)}}]{\setlength{\rightskip}{0pt plus 5cm}void afficher\+\_\+perso (
+\begin{DoxyParamCaption}
+\item[{{\bf personnage} $\ast$}]{p, }
+\item[{S\+D\+L\+\_\+\+Surface $\ast$}]{screen}
+\end{DoxyParamCaption}
+)}\hypertarget{entity_8c_a43181619fa488bdbf458203b3a0a51c5}{}\label{entity_8c_a43181619fa488bdbf458203b3a0a51c5}
+
+
+To show the personnage p . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & the screen \\
+\hline
+{\em p} & the personnage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\index{entity.\+c@{entity.\+c}!anim@{anim}}
+\index{anim@{anim}!entity.\+c@{entity.\+c}}
+\subsubsection[{\texorpdfstring{anim(entity $\ast$e)}{anim(entity *e)}}]{\setlength{\rightskip}{0pt plus 5cm}void anim (
+\begin{DoxyParamCaption}
+\item[{{\bf entity} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{entity_8c_a7a0c32e4b866aa8b654cf37de8a5090b}{}\label{entity_8c_a7a0c32e4b866aa8b654cf37de8a5090b}
+
+
+for the animation the secondary entity . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & the entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{entity_8c_a7a0c32e4b866aa8b654cf37de8a5090b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{entity.\+c@{entity.\+c}!detect\+\_\+collision@{detect\+\_\+collision}}
+\index{detect\+\_\+collision@{detect\+\_\+collision}!entity.\+c@{entity.\+c}}
+\subsubsection[{\texorpdfstring{detect\+\_\+collision(personnage $\ast$p, entity $\ast$e)}{detect_collision(personnage *p, entity *e)}}]{\setlength{\rightskip}{0pt plus 5cm}int detect\+\_\+collision (
+\begin{DoxyParamCaption}
+\item[{{\bf personnage} $\ast$}]{p, }
+\item[{{\bf entity} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{entity_8c_a49f4932b04d7655277cd407f47b7e8a1}{}\label{entity_8c_a49f4932b04d7655277cd407f47b7e8a1}
+
+
+for the detection of a collision bounding box . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & the entity \\
+\hline
+{\em p} & the personnage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+collision 
+\end{DoxyReturn}
+\index{entity.\+c@{entity.\+c}!gestion@{gestion}}
+\index{gestion@{gestion}!entity.\+c@{entity.\+c}}
+\subsubsection[{\texorpdfstring{gestion(entity $\ast$e)}{gestion(entity *e)}}]{\setlength{\rightskip}{0pt plus 5cm}int gestion (
+\begin{DoxyParamCaption}
+\item[{{\bf entity} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{entity_8c_af8b5bea828d1c0c6abffbccc337ca825}{}\label{entity_8c_af8b5bea828d1c0c6abffbccc337ca825}
+
+
+if the type of the entity is good so it will disappear in case of collision . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & the entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 
+\end{DoxyReturn}
+\index{entity.\+c@{entity.\+c}!initialiser\+\_\+entity@{initialiser\+\_\+entity}}
+\index{initialiser\+\_\+entity@{initialiser\+\_\+entity}!entity.\+c@{entity.\+c}}
+\subsubsection[{\texorpdfstring{initialiser\+\_\+entity(entity $\ast$e, int t)}{initialiser_entity(entity *e, int t)}}]{\setlength{\rightskip}{0pt plus 5cm}void initialiser\+\_\+entity (
+\begin{DoxyParamCaption}
+\item[{{\bf entity} $\ast$}]{e, }
+\item[{int}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{entity_8c_a4ccd350b3198bed521c69a2498ecbc67}{}\label{entity_8c_a4ccd350b3198bed521c69a2498ecbc67}
+
+
+To initialize the entity e . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & the entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=271pt]{entity_8c_a4ccd350b3198bed521c69a2498ecbc67_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{entity.\+c@{entity.\+c}!initialiser\+\_\+perso@{initialiser\+\_\+perso}}
+\index{initialiser\+\_\+perso@{initialiser\+\_\+perso}!entity.\+c@{entity.\+c}}
+\subsubsection[{\texorpdfstring{initialiser\+\_\+perso(personnage $\ast$p)}{initialiser_perso(personnage *p)}}]{\setlength{\rightskip}{0pt plus 5cm}void initialiser\+\_\+perso (
+\begin{DoxyParamCaption}
+\item[{{\bf personnage} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{entity_8c_ab76e735545868fc99b5b91849eea7d7a}{}\label{entity_8c_ab76e735545868fc99b5b91849eea7d7a}
+
+
+To initialize the personnage p . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & the personnage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+\index{entity.\+c@{entity.\+c}!mvt\+\_\+entity@{mvt\+\_\+entity}}
+\index{mvt\+\_\+entity@{mvt\+\_\+entity}!entity.\+c@{entity.\+c}}
+\subsubsection[{\texorpdfstring{mvt\+\_\+entity(entity $\ast$e, personnage $\ast$p)}{mvt_entity(entity *e, personnage *p)}}]{\setlength{\rightskip}{0pt plus 5cm}void mvt\+\_\+entity (
+\begin{DoxyParamCaption}
+\item[{{\bf entity} $\ast$}]{e, }
+\item[{{\bf personnage} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{entity_8c_a6a59c380525a58504970c106321599d2}{}\label{entity_8c_a6a59c380525a58504970c106321599d2}
+
+
+for the random movement of the secondary entity and the automation ennemi . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & the entity \\
+\hline
+{\em p} & the personnage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{entity_8c_a6a59c380525a58504970c106321599d2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{entity_8c_a6a59c380525a58504970c106321599d2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{entity.\+c@{entity.\+c}!rand\+\_\+min\+\_\+max@{rand\+\_\+min\+\_\+max}}
+\index{rand\+\_\+min\+\_\+max@{rand\+\_\+min\+\_\+max}!entity.\+c@{entity.\+c}}
+\subsubsection[{\texorpdfstring{rand\+\_\+min\+\_\+max(entity $\ast$e)}{rand_min_max(entity *e)}}]{\setlength{\rightskip}{0pt plus 5cm}void rand\+\_\+min\+\_\+max (
+\begin{DoxyParamCaption}
+\item[{{\bf entity} $\ast$}]{e}
+\end{DoxyParamCaption}
+)}\hypertarget{entity_8c_af78186ba488162ac2cf554d640b429b2}{}\label{entity_8c_af78186ba488162ac2cf554d640b429b2}
+
+
+to change the maxi down and the maxi up randomly . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & the entity \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{entity_8c_af78186ba488162ac2cf554d640b429b2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{entity.\+c@{entity.\+c}!update\+\_\+entity@{update\+\_\+entity}}
+\index{update\+\_\+entity@{update\+\_\+entity}!entity.\+c@{entity.\+c}}
+\subsubsection[{\texorpdfstring{update\+\_\+entity(entity $\ast$e, personnage $\ast$p)}{update_entity(entity *e, personnage *p)}}]{\setlength{\rightskip}{0pt plus 5cm}void update\+\_\+entity (
+\begin{DoxyParamCaption}
+\item[{{\bf entity} $\ast$}]{e, }
+\item[{{\bf personnage} $\ast$}]{p}
+\end{DoxyParamCaption}
+)}\hypertarget{entity_8c_a669bdf00d6412194de61ae2bde2aa833}{}\label{entity_8c_a669bdf00d6412194de61ae2bde2aa833}
+
+
+for the integration of two functions (anim,mouv) . 
+
+
+\begin{DoxyParams}{Parameters}
+{\em e} & the entity \\
+\hline
+{\em p} & the personnage \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{entity_8c_a669bdf00d6412194de61ae2bde2aa833_cgraph}
+\end{center}
+\end{figure}
+
+
