@@ -106,13 +106,13 @@ void Timer(int *tempsdebut)
   
 }
 /**
-* @brief To initialize the text T .
-* @param T the text 
+* @brief To initialize the time .
+* @param t the time 
 * @return nothing
 */
 void inittemps(Time *t)
 {   int test; 
-	t->tempsdebut=0;
+	t->tempsdebut=SDL_GetTicks();
 	t->mm=0;
 	t->ss=0;
 	test=initTexttime(&t->temps);
@@ -129,9 +129,9 @@ int initTexttime(Text* T)
     T->couleurTxt.b = 255;
 
     strcpy(T->txt, "");
-    T->positionText.x = 800;
+    T->positionText.x = 850;
     T->positionText.y = 20; 
-    testload=loadFontvie(T,"angelina.TTF");
+    testload=loadFonttime(T,"angelina.TTF");
     T->textSurface=NULL;
     return testload;   
 }
@@ -149,14 +149,13 @@ int loadFonttime(Text* T, char* path)
         printf("Erreur d'initialisation de TTF_Init : %s\n", TTF_GetError());
         return -1;
     }
-    T->police= TTF_OpenFont(path,20);
+    T->police= TTF_OpenFont(path,60);
     if (police == NULL) {
         printf("Unable to load Font: %s\n", SDL_GetError());
         return (-1);
     }
     return (0);
 }
-
 /**
 * @brief To update time  .
 * @param T the text of time.
@@ -170,7 +169,7 @@ void update_time(Time* T)
     //if(T->ss>60)
     T->mm=ts/ 60;
     T->ss=ts % 60;
-    printf("ts : %d , mm : %d , ss : %d\n\n",ts,T->mm,T->ss);
+    //printf("ts : %d , mm : %d , ss : %d\n\n",ts,T->mm,T->ss);
     /*if((ts<60)&&(T->ss<60))
     {
     T->ss=T->ss+ts;
@@ -180,8 +179,14 @@ void update_time(Time* T)
     T->mm=T->mm+(ts / 60);
     T->ss=T->ss+(ts % 60);
     }*/
-    
-    sprintf(T->temps.txt,"*** time :%d:%d  ***",T->mm,T->ss);
+    if(T->mm<10&&T->ss<10)
+       sprintf(T->temps.txt,"*** time :0%d:0%d  ***",T->mm,T->ss);
+    else if(T->mm<10&&T->ss>10)
+        sprintf(T->temps.txt,"*** time :0%d:%d  ***",T->mm,T->ss);
+    else if(T->mm>10&&T->ss<10)
+          sprintf(T->temps.txt,"*** time :%d:0%d  ***",T->mm,T->ss);
+    /*else
+         sprintf(T->temps.txt,"*** time :%d:%d  ***",T->mm,T->ss); */
     T->temps.textSurface=TTF_RenderText_Solid(T->temps.police,T->temps.txt,T->temps.couleurTxt);
 }
 /**
